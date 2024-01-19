@@ -1,0 +1,49 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+Importing the function from the module:
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+Positive Numbers
+    >>> add_integer(2, 2)
+    4
+
+Negative Numbers
+    >>> add_integer(-2, -3)
+    -5
+
+Only a arg
+    >>> add_integer(2)
+    100
+
+No Any Args
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+(a) Is Not an Integer
+    >>> add_integer("Mos3aB")
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+(b) Is Not an Integer
+    >>> add_integer(2, [2, 3, 4])
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+floating
+    >>> add_integer(3.5, 4.5)
+    7
+
+More Than Three Arguments
+    >>> add_integer(2, 3, 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
