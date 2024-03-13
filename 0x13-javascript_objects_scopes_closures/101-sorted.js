@@ -1,4 +1,5 @@
-t dict = require('./101-data').dict;
+#!/usr/bin/node
+const dict = require('./101-data').dict;
 
 const totalist = Object.entries(dict);
 const vals = Object.values(dict);
